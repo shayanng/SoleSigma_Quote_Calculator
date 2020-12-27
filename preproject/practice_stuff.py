@@ -3,9 +3,13 @@ from tkinter import *
 
 root = Tk()
 
+e = Entry(root, width=60, bg="white", borderwidth=3)
+e.pack()
+e.insert(0, "Type Client's Budget")
+
 
 def myClick():
-    myLabel = Label(root, text="The quote is calculated")
+    myLabel = Label(root, text="The client Budget is " + e.get())
     myLabel.pack()
 
 
@@ -15,4 +19,4 @@ myButton.pack()
 
 root.mainloop()
 
-########### creting button ###########
+########### Input Box ###########
