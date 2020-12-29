@@ -1,5 +1,6 @@
 import time
 
+
 def search_ads_quote(client_budget: float, addon: bool = True):
     if client_budget <= 5000 and addon is True:
         print("The Final Clint Quote: ", (500 + 150))
